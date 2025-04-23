@@ -1,0 +1,24 @@
+{
+  "name": "hr_directory",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Scott-Mitchell336/hr_directory.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Scott-Mitchell336/hr_directory/issues"
+  },
+  "homepage": "https://github.com/Scott-Mitchell336/hr_directory#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "pg": "^8.15.1"
+  }
+}
