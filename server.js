@@ -52,6 +52,7 @@ async function insertData() {
   console.log("Checking and inserting data...");
   try {
     // Check if departments already exist
+    // this fixes an issue where the departments were being duplicated
     const departmentsCheck = await client.query(
       "SELECT COUNT(*) FROM departments"
     );
@@ -70,6 +71,7 @@ async function insertData() {
     }
 
     // Check if employees already exist
+    // this fixes an issue where the employees were being duplicated
     const employeesCheck = await client.query("SELECT COUNT(*) FROM employees");
     console.log("employeeCheck = ", employeesCheck);
     if (parseInt(employeesCheck.rows[0].count) === 0) {
