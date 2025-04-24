@@ -166,12 +166,6 @@ app.delete("/api/employees/:id", async (req, res) => {
   }
 });
 
-// An error handling route
-// app.use((err, req, res, next) => {
-//   console.error(err.stack);
-//   res.status(500).send("Something broke!");
-// });
-
 app.listen(port, async () => {
   await client.connect();
   console.log(`Server is running on http://localhost:${port}`);
